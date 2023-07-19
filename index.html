@@ -14,7 +14,7 @@
                         <span>Expense name:</span><input id="name-input" type="text" placeholder="Add new expense">
                     </div>
                     <div class="input2">
-                        <span>Ammount:</span><input id="amount-input" type="text" placeholder="Add amount"><span class="currency">$</span>
+                        <span>Amount:</span><input id="amount-input" type="text" placeholder="Add amount"><span class="currency">$</span>
                     </div>
                 </div>
                 
@@ -26,10 +26,15 @@
 
 
             </form>
-            <table class="expenses" id="expenses"> </table>
+            
 
         </div>
-
+        
+        <table class="expenses" id="expenses" border="1"> 
+            <tr><td>Expenses</td><td>Amount</td></tr>
+            <tr><td>Total:</td><td id="total">0</td></tr>
+        </table>
+       
     
     
     <script src="/js/script.js"></script>
