@@ -3,10 +3,12 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <title>Expense Traker</title>
     </head>
     
     <body>
-        <h1>ya 3ali madad</h1>
+        <h1>Expense Traker</h1>
+        <div class="main">
         <div class="container">
             <form>
                 <div class="input-box">
@@ -14,7 +16,7 @@
                         <span>Expense name:</span><input id="name-input" type="text" placeholder="Add new expense">
                     </div>
                     <div class="input2">
-                        <span>Amount:</span><input id="amount-input" type="text" placeholder="Add amount"><span class="currency">$</span>
+                        <span>Amount:</span><input id="amount-input" type="number" placeholder="Add amount"><span class="currency">$</span>
                     </div>
                 </div>
                 
@@ -29,14 +31,15 @@
             
 
         </div>
-        
-        <table class="expenses" id="expenses" border="1"> 
-            <tr><td>Expenses</td><td>Amount</td></tr>
-            <tr><td>Total:</td><td id="total">0</td></tr>
-        </table>
-       
+
+        <div class="table-area">
+            <table class="expenses" id="expenses" > 
+                <tr><td>Expenses</td><td>Amount</td><td>$</td></tr>
+                <tr><td>Total:</td><td id="total">0</td><td>$</td></tr>
+            </table>
+        </div>
     
-    
+    </div>
     <script src="/js/script.js"></script>
     </body>
 </html>

@@ -10,7 +10,7 @@ $(document).ready(function() {
 
       if (expenseName.trim() !== ""  &&  !isNaN(expenseAmount)) {
         const totalRow = $("#expenses tr:last");
-        const newExpense = $("<tr><td></td><td></td></tr>");
+        const newExpense = $("<tr><td></td><td></td><td>$</td></tr>");
         
         newExpense.find("td").eq(0).text(expenseName);
         newExpense.find("td").eq(1).text(expenseAmount.toFixed(2));
